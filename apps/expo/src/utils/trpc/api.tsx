@@ -44,11 +44,11 @@ export const getBaseUrl = (ws = false) => {
   // TODO: configure ws url, on deployed environment
 
   /* deployed */
-  if (!localhost && ws) return 'https://2024-s-group-3-barbell-nextjs.vercel.app/3001'
+  // if (!localhost && ws) return 'https://2024-s-group-3-barbell-nextjs.vercel.app/3001'
   if (!localhost) return 'https://2024-s-group-3-barbell-nextjs.vercel.app/'
 
   /* local */
-  if (ws) return `ws://${localhost}:3001/ws`
+  // if (ws) return `ws://${localhost}:3001/ws`
   return `http://${localhost}:3000`
 }
 
